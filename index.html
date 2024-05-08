@@ -10,11 +10,12 @@
     ></script>
     <link rel="shortcut icon" href="./Assets/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="main.css" />
-    <title>Netflix Việt Nam - Watch TV Shows Online, Watch Movies Online</title>
+    <title>Netflix Việt Nam</title>
   </head>
   <body>
     <div class="header">
       <nav>
+        <a href="#">
         <svg
           viewBox="0 0 111 30"
           version="1.1"
@@ -30,9 +31,11 @@
             ></path>
           </g>
         </svg>
+        </a>
         <div>
           <button class="lang-btn">
-            <i class="fa-solid fa-globe"></i> Tiếng Việt ▼
+            <i class="fa-solid fa-globe"></i>
+            Tiếng Việt 
           </button>
           <button>Đăng nhập</button>
         </div>
@@ -66,11 +69,12 @@
         <div class="img-col">
           <div class="default-featured-1-container">
             <img
+              id="thumbnail"
               alt=""
               src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png"
             />
-            <div class="default-featured-1-container-video">
-              <video autoplay="" playsinline="" muted="" loop="">
+            <div class="default-featured-1-container-video" id="video-container" style="display: none;">
+              <video autoplay="" playsinline="" muted="" loop="" id="video">
                 <source
                   src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v"
                   type="video/mp4"
@@ -302,5 +306,6 @@
 
       <p class="copyright-text">Netflix Việt Nam</p>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
